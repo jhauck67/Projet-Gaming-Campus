@@ -1,0 +1,50 @@
+// Import des Fonts
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+// Variables
+$font: "Montserrat";
+$white: #ffffff;
+$black: #000000;
+$color: #5f04aa;
+$grey1: #e0e0e0;
+$grey2: #f7f7f7;
+
+// Mixins
+@mixin title {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+@mixin centerChild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Réglages généraux
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: $font;
+  color: $black;
+}
+body {
+  background: $white;
+}
+h1 {
+  @include title;
+}
+li {
+  list-style: none;
+}
+button {
+  @include title;
+  background: transparent;
+  padding: 5px;
+  color: $white;
+  border: 1px solid $white;
+}
