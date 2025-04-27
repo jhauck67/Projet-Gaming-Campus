@@ -1,0 +1,25 @@
+section.investors {
+  background: $black;
+  padding: 20px 0 30px;
+  .investors-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    h3 {
+      @include title;
+      color: $white;
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+    .investors-logos {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0;
+      img {
+        padding: 20px;
+      }
+    }
+  }
+}

@@ -36,6 +36,9 @@ footer {
           0.9rem
         );
         min-height: 0vw;
+        &:hover {
+          transform: scale(1.05);
+        }
       }
       p {
         text-align: left;
@@ -75,6 +78,10 @@ footer {
           align-items: start;
           i {
             padding-right: 20px;
+            &:hover {
+              transform: scale(1.1);
+              color: $color;
+            }
           }
         }
       }

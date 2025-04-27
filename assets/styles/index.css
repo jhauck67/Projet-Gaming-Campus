@@ -443,6 +443,10 @@ footer .links .links-container a {
   font-size: clamp(0.6rem, 0.6rem + (1vw - 0.48125rem) * 0.7164, 0.9rem);
   min-height: 0vw;
 }
+footer .links .links-container a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
 footer .links .links-container p {
   text-align: left;
   padding: 10px 0;
@@ -487,6 +491,11 @@ footer .links .links-container .follow .networks {
 }
 footer .links .links-container .follow .networks i {
   padding-right: 20px;
+}
+footer .links .links-container .follow .networks i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #5f04aa;
 }
 footer .links .press-container {
   display: grid;
@@ -535,4 +544,38 @@ footer .links .press-container .press-container-right {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+}
+
+section.investors {
+  background: #000000;
+  padding: 20px 0 30px;
+}
+section.investors .investors-container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section.investors .investors-container h3 {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+section.investors .investors-container .investors-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+}
+section.investors .investors-container .investors-logos img {
+  padding: 20px;
 }/*# sourceMappingURL=index.css.map */
