@@ -49,7 +49,7 @@ Le code a été structuré pour être facile à maintenir et à développer.
 ## Aperçu
 
 Voici un aperçu du projet, que tu peux visualiser en ligne sur GitHub Pages :
-![./assets/sketch/aperçu.png]
+![Aperçu du projet](https://github.com/jhauck67/Projet-Gaming-Campus/blob/main/assets/sketch/aper%C3%A7u.png)
 
 ### Lien vers le site en ligne
 
