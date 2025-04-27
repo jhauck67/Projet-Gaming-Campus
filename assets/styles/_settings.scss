@@ -11,6 +11,7 @@ $black: #000000;
 $color: #5f04aa;
 $grey1: #e0e0e0;
 $grey2: #f7f7f7;
+$white-button: #f5f5f5bf;
 
 // Mixins
 @mixin title {
@@ -43,8 +44,15 @@ li {
 }
 button {
   @include title;
+  font-weight: 600;
+  letter-spacing: 1px;
   background: transparent;
-  padding: 5px;
+  padding: 10px 20px;
   color: $white;
   border: 1px solid $white;
+  transition: 0.4s ease;
+  &:hover {
+    background: $white-button;
+    color: $black;
+  }
 }

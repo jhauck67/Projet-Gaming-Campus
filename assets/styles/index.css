@@ -28,10 +28,18 @@ li {
 button {
   text-transform: uppercase;
   font-weight: 800;
+  font-weight: 600;
+  letter-spacing: 1px;
   background: transparent;
-  padding: 5px;
+  padding: 10px 20px;
   color: #ffffff;
   border: 1px solid #ffffff;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+button:hover {
+  background: rgba(245, 245, 245, 0.7490196078);
+  color: #000000;
 }
 
 nav {
@@ -101,4 +109,54 @@ nav ul li:not(:last-child):hover::before {
 nav ul li .language:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+header {
+  background: url(../img/background-video-game-player.webp) center/cover fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .header-container {
+  width: 70%;
+  padding: 60px 0;
+}
+header .header-container img {
+  width: 80%;
+}
+header .header-container h1 {
+  font-size: clamp(0.7rem, 0.7rem + (1vw - 0.2rem) * 1.1429, 1.5rem);
+  min-height: 0vw;
+  padding: clamp(15px, 0.9375rem + (1vw - 3.2px) * 1.3393, 30px);
+  color: #ffffff;
+  font-weight: 700;
+}
+header .header-container button {
+  font-size: clamp(0.5rem, 0.5rem + (1vw - 0.2rem) * 0.7143, 1rem);
+  min-height: 0vw;
+}
+header .header-container button:hover i {
+  color: #000000;
+}
+header .header-container button i {
+  color: #ffffff;
+  font-size: clamp(0.4rem, 0.4rem + (1vw - 0.2rem) * 0.4286, 0.7rem);
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
+}
+
+.header-footer .header-footer-container {
+  width: 85%;
+  margin: 0 auto;
+}
+.header-footer .header-footer-container p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 40px 0;
 }/*# sourceMappingURL=index.css.map */

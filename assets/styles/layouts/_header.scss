@@ -1,0 +1,51 @@
+header {
+  background: url(../img/background-video-game-player.webp) center/cover fixed;
+  @include centerChild;
+  .header-container {
+    width: 70%;
+    padding: 60px 0;
+    img {
+      width: 80%;
+    }
+    h1 {
+      font-size: clamp(
+        0.7rem,
+        calc(0.7rem + ((1vw - 0.2rem) * 1.1429)),
+        1.5rem
+      );
+      min-height: 0vw;
+      padding: clamp(15px, calc(0.9375rem + ((1vw - 3.2px) * 1.3393)), 30px);
+      color: $white;
+      font-weight: 700;
+    }
+    button {
+      font-size: clamp(0.5rem, calc(0.5rem + ((1vw - 0.2rem) * 0.7143)), 1rem);
+      min-height: 0vw;
+      &:hover {
+        i {
+          color: $black;
+        }
+      }
+      i {
+        color: $white;
+        font-size: clamp(
+          0.4rem,
+          calc(0.4rem + ((1vw - 0.2rem) * 0.4286)),
+          0.7rem
+        );
+        transform: translateX(2px);
+      }
+    }
+  }
+}
+.header-footer {
+  .header-footer-container {
+    width: 85%;
+    margin: 0 auto;
+    p {
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 40px 0;
+    }
+  }
+}
