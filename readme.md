@@ -1,6 +1,6 @@
 # Projet Gaming Campus
 
-![HTML](https://img.shields.io/badge/HTML-5-orange) ![CSS](https://img.shields.io/badge/CSS-3-0077B5) ![SASS](https://img.shields.io/badge/CSS%20preprocessor-SASS-CC6699) ![Optimisation des images](https://img.shields.io/badge/Optimisation%20des%20images-Squoosh-blue) ![Performance](https://img.shields.io/badge/Performance-95-brightgreen)
+![HTML](https://img.shields.io/badge/HTML-5-orange) ![CSS](https://img.shields.io/badge/CSS-3-0077B5) ![SASS](https://img.shields.io/badge/CSS%20preprocessor-SASS-CC6699) ![Optimisation des images](https://img.shields.io/badge/Optimisation%20des%20images-Squoosh-blue) ![Performance](https://img.shields.io/badge/Lighthouse-95-brightgreen)
 
 ## Description
 
