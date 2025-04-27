@@ -57,3 +57,8 @@ button {
     color: $black;
   }
 }
+a {
+  @include title;
+  color: $color;
+  text-decoration: none;
+}
