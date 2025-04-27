@@ -51,6 +51,7 @@ button {
   color: $white;
   border: 1px solid $white;
   transition: 0.4s ease;
+  cursor: pointer;
   &:hover {
     background: $white-button;
     color: $black;

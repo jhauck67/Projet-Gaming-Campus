@@ -36,6 +36,7 @@ button {
   border: 1px solid #ffffff;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+  cursor: pointer;
 }
 button:hover {
   background: rgba(245, 245, 245, 0.7490196078);
@@ -153,10 +154,93 @@ header .header-container button i {
 
 .header-footer .header-footer-container {
   width: 85%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .header-footer .header-footer-container p {
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: clamp(0.6rem, 0.6rem + (1vw - 0.2rem) * 0.7143, 1.1rem);
+  min-height: 0vw;
+  font-weight: 700;
+  padding-top: clamp(20px, 1.25rem + (1vw - 3.2px) * 1.7857, 40px);
+  padding-bottom: clamp(20px, 1.25rem + (1vw - 3.2px) * 1.7857, 40px);
+}
+
+section.part1 {
+  background: #000000;
+}
+section.part1 .part1-container {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
   padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 770px) {
+  section.part1 .part1-container {
+    display: block;
+  }
+  section.part1 .part1-container .part1-card {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+section.part1 .part1-container .part1-card {
+  width: 360px;
+  margin: 40px auto;
+}
+@media screen and (max-width: 770px) {
+  section.part1 .part1-container .part1-card {
+    width: 90%;
+  }
+}
+section.part1 .part1-container .part1-card .part1-img-container img {
+  width: 80%;
+}
+@media screen and (max-width: 770px) {
+  section.part1 .part1-container .part1-card .part1-img-container img {
+    width: 60%;
+  }
+}
+section.part1 .part1-container .part1-card h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: clamp(0.9rem, 0.9rem + (1vw - 0.5625rem) * 1.4815, 1.4rem);
+  min-height: 0vw;
+  padding: 20px 0 10px;
+}
+@media screen and (max-width: 770px) {
+  section.part1 .part1-container .part1-card h2 {
+    font-size: clamp(0.7rem, 0.7rem + (1vw - 0.2rem) * 2.4889, 1.4rem);
+  }
+}
+section.part1 .part1-container .part1-card p {
+  color: #ffffff;
+  font-size: clamp(0.7rem, 0.7rem + (1vw - 0.48125rem) * 0.9552, 1.1rem);
+  min-height: 0vw;
+  padding: 0 10px;
+}
+@media screen and (max-width: 770px) {
+  section.part1 .part1-container .part1-card p {
+    font-size: clamp(0.7rem, 0.7rem + (1vw - 0.2rem) * 1.0667, 1rem);
+  }
+}
+section.part1 .part1-container .part1-card button {
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: clamp(0.7rem, 0.7rem + (1vw - 0.48125rem) * 0.7164, 1rem);
+  min-height: 0vw;
+}
+@media screen and (max-width: 770px) {
+  section.part1 .part1-container .part1-card button {
+    font-size: clamp(0.7rem, 0.7rem + (1vw - 0.2rem) * 1.0667, 1rem);
+  }
 }/*# sourceMappingURL=index.css.map */

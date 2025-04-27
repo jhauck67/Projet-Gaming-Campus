@@ -41,11 +41,22 @@ header {
 .header-footer {
   .header-footer-container {
     width: 85%;
+    max-width: 1200px;
     margin: 0 auto;
     p {
-      font-size: 1.1rem;
-      font-weight: 600;
-      padding: 40px 0;
+      font-size: clamp(
+        0.6rem,
+        calc(0.6rem + ((1vw - 0.2rem) * 0.7143)),
+        1.1rem
+      );
+      min-height: 0vw;
+      font-weight: 700;
+      padding-top: clamp(20px, calc(1.25rem + ((1vw - 3.2px) * 1.7857)), 40px);
+      padding-bottom: clamp(
+        20px,
+        calc(1.25rem + ((1vw - 3.2px) * 1.7857)),
+        40px
+      );
     }
   }
 }
