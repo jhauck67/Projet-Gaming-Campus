@@ -7,12 +7,12 @@ tags:
 ---
 ## Checklist Structure Projet
 
-- [ ] Créer le dossier Projet
-- [ ] Compléter la balise `<head>`
-	- [ ] Changer l'attribut `lang` en `fr`
-	- [ ] Remplir la balise `<title>` et `<meta description="">`
-	- [ ] Trouver et intégrer la `favicon` (16x16px)
-	- [ ] Lier ***Font Awesome***
+- [x] Créer le dossier Projet
+- [x] Compléter la balise `<head>`
+	- [x] Changer l'attribut `lang` en `fr`
+	- [x] Remplir la balise `<title>` et `<meta description="">`
+	- [x] Trouver et intégrer la `favicon` (16x16px)
+	- [x] Lier ***Font Awesome***
 
 ## Checklist Fonts
 
@@ -25,9 +25,9 @@ description: "Making the web more beautiful, fast, and open through great typogr
 url: "https://fonts.google.com/"
 ```
 
-- [ ] Télécharger la(les) fonts
-- [ ] Les déplacer dans le dossier `/assets/fonts`
-- [ ] Appeler la(les) fonts dans le fichier `_settings.scss`
+- [x] Télécharger la(les) fonts
+- [x] Les déplacer dans le dossier `/assets/fonts`
+- [x] Appeler la(les) fonts dans le fichier `_settings.scss`
 
 ## Checklist Optimisation Images Web
 
@@ -40,8 +40,8 @@ description: "Squoosh is the ultimate image optimizer that allows you to compres
 url: "https://squoosh.app/"
 ```
 
-- [ ] Redimensionner les fichiers images.
-- [ ] Les formatter.
+- [x] Redimensionner les fichiers images.
+- [x] Les formatter.
 
 > ***Tailles d'image recommandées***
 > - Backgrounds : 1920x1080px
@@ -53,20 +53,27 @@ url: "https://squoosh.app/"
 > - `.jpg` (photos si `.webp` indisponible)
 > - `.png` (transparence uniquement)
 
-- [ ] Compresser les fichiers images.
+- [x] Compresser les fichiers images.
 
 > ***Poids cibles***
 > Backgrounds : < 300 Ko
 > Illustrations importantes : < 200 Ko
 > Petites illustrations : < 100 Ko
 
-- [ ] Donner un nom de fichier descriptif (ex: `background-ville-nuit.webp`).
+- [x] Donner un nom de fichier descriptif (ex: `background-ville-nuit.webp`).
 
 ### A l'intégration
 
-- [ ] Remplir l'attribut `alt` avec une description détaillée.
+- [x] Remplir l'attribut `alt` avec une description détaillée.
+
+## Intégration
+
+- [x] Intégrer le site web
+- [ ] Optimiser le site web
 
 ## GitHub : ReadMe.md
+
+- [ ] Créer un README.md
 
 ### Template GitHub ReadMe.md
 ```markdown
@@ -89,3 +96,7 @@ Toutes les images du projet suivent les bonnes pratiques :
 ```markdown
 ![Optimisation des images](https://img.shields.io/badge/Images-Optimisées-0aa4d4?style=for-the-badge&logo=googlephotos&logoColor=white)
 ```
+
+
+- [ ] mettre des balises  `<a>`
+- [ ] 
