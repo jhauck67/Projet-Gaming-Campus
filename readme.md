@@ -67,19 +67,19 @@ Le projet a été audité à l'aide de Lighthouse pour évaluer ses performances
 
 ## Performances ![Performances](https://img.shields.io/badge/Performances-100-brightgreen)
 
-First Contentful Paint ![First Contentful Paint](https://img.shields.io/badge/FCP-0,4s-brightgreen)  
+First Contentful Paint ![First Contentful Paint](https://img.shields.io/badge/FCP-0,2s-brightgreen)  
 \
-Largest Contentful Paint ![Largest Contentful Paint](https://img.shields.io/badge/LCP-0,4s-brightgreen)  
+Largest Contentful Paint ![Largest Contentful Paint](https://img.shields.io/badge/LCP-0,2s-brightgreen)  
 \
 Total Blocking Time ![Total Blocking Time](https://img.shields.io/badge/TBT-0ms-brightgreen)  
 \
 Cumulative Layout Shift ![Cumulative Layout Shift](https://img.shields.io/badge/CLS-0-brightgreen)  
 \
-Speed Index ![Speed Index](https://img.shields.io/badge/Speed_Index-0,4s-brightgreen)
+Speed Index ![Speed Index](https://img.shields.io/badge/Speed_Index-0,2s-brightgreen)
 \
 \
-Le site est parfaitement optimisé, avec un temps de chargement ultra rapide, une absence totale de blocage et de décalage de mise en page, garantissant une expérience utilisateur fluide et réactive.
-\
+Le site est parfaitement optimisé, avec un temps de chargement ultra rapide, une absence totale de blocage et de décalage de mise en page, garantissant une expérience utilisateur fluide et réactive.  
+
 ## Accessibilité ![Accessibilité](https://img.shields.io/badge/Accessibilit%C3%A9-100-brightgreen)
 Le site est entièrement accessible, avec un score parfait de 100. Aucune erreur n'a été détectée sur les critères d'accessibilité, garantissant que le contenu est disponible pour tous les utilisateurs, y compris ceux ayant des besoins spécifiques.
 
@@ -95,20 +95,20 @@ Le site est optimisé pour le référencement naturel (SEO) avec un score de 100
 
   - [ ] Retrait des boutons : Retravailler les boutons pour améliorer leur interactivité et leur accessibilité. Ajouter des animations CSS ou JavaScript pour une meilleure expérience utilisateur.
   - [ ] Ajout d'ancres : Mettre en place des ancres pour une meilleure navigation entre les sections du site.
-  - [ ] Optimiser les .png en .webp
-  - [ ] Ajouter des attributs **width** et **height** aux balises `<img>`
+  - [x] Optimiser les .png en .webp
+  - [x] Ajouter des attributs **width** et **height** aux balises `<img>`
   - [ ] Remplacer les balises `<i>` de Font Awesome par des `<img>` `.sgv`
-  - [ ] Ajouter `font-display` pour améliorer la performance
+  - [x] Ajouter `font-display` pour améliorer la performance
 
-- [ ] Modifications SEO friendly :
+- [x] Modifications SEO friendly :
 
-  - [ ] Balises <meta> : Auteur de la page pour améliorer la visibilité sur les moteurs de recherche.
+  - [x] Balises <meta> : Auteur de la page pour améliorer la visibilité sur les moteurs de recherche.
 
 - [ ] Fichier sitemap.xml : Créer et soumettre un fichier sitemap pour faciliter l'indexation du site par les moteurs de recherche.
 
 - [ ] Rechercher des propositions d'améliorations SEO Friendly
 
-- [ ] Ajouter des balises Open Graph
+- [x] Ajouter des balises Open Graph
 
 # Auteur :
 
