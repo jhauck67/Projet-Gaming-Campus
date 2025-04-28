@@ -1,6 +1,6 @@
 # Projet Gaming Campus
 
-![HTML](https://img.shields.io/badge/HTML-5-orange) ![CSS](https://img.shields.io/badge/CSS-3-0077B5) ![SASS](https://img.shields.io/badge/CSS%20preprocessor-SASS-CC6699) ![Optimisation des images](https://img.shields.io/badge/Optimisation%20des%20images-Squoosh-blue) ![Performance](https://img.shields.io/badge/Performance-95-brightgreen)
+![HTML](https://img.shields.io/badge/HTML-5-orange) ![CSS](https://img.shields.io/badge/CSS-3-0077B5) ![SASS](https://img.shields.io/badge/CSS%20preprocessor-SASS-CC6699) ![Optimisation des images](https://img.shields.io/badge/Optimisation%20des%20images-Squoosh-blue) ![Performance](https://img.shields.io/badge/Lighthouse-95-brightgreen)
 
 ## Description
 
@@ -49,7 +49,7 @@ Le code a été structuré pour être facile à maintenir et à développer.
 ## Aperçu
 
 Voici un aperçu du projet, que tu peux visualiser en ligne sur GitHub Pages :
-![./assets/sketch/aperçu.png]
+![Aperçu du projet](https://github.com/jhauck67/Projet-Gaming-Campus/blob/main/assets/sketch/aper%C3%A7u.png)
 
 ### Lien vers le site en ligne
 
