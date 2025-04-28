@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  font-display: swap;
 }
 * {
   margin: 0;
@@ -8,7 +9,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: #000000;
 }
 
@@ -34,8 +35,8 @@ button {
   padding: 10px 20px;
   color: #ffffff;
   border: 1px solid #ffffff;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   cursor: pointer;
 }
 button:hover {
@@ -137,6 +138,7 @@ header .header-container {
 }
 header .header-container img {
   width: 80%;
+  max-width: 600px;
 }
 header .header-container h1 {
   font-size: clamp(0.7rem, 0.7rem + (1vw - 0.2rem) * 1.1429, 1.5rem);
