@@ -137,7 +137,8 @@ header .header-container {
   padding: 60px 0;
 }
 header .header-container img {
-  width: 80%;
+  width: 70%;
+  height: auto;
   max-width: 600px;
 }
 header .header-container h1 {
@@ -212,6 +213,7 @@ section.part1 .part1-container .part1-card {
 }
 section.part1 .part1-container .part1-card .part1-img-container img {
   width: 80%;
+  height: auto;
 }
 @media screen and (max-width: 770px) {
   section.part1 .part1-container .part1-card .part1-img-container img {
@@ -366,6 +368,7 @@ section.news .news-container .news-main .news-main-card {
 }
 section.news .news-container .news-main .news-main-card img {
   width: 95%;
+  height: auto;
   margin: 10px;
   -webkit-box-shadow: 2px 2px 12px 1px #7b7a7a;
           box-shadow: 2px 2px 12px 1px #7b7a7a;
@@ -477,6 +480,7 @@ footer .links .links-container .link-container-column1 {
 }
 footer .links .links-container .link-container-column1 img {
   width: 80%;
+  height: auto;
 }
 footer .links .links-container .follow {
   margin: 30px 0;
@@ -564,7 +568,7 @@ section.investors .investors-container h2 {
   font-size: 0.9rem;
   font-weight: 400;
 }
-section.investors .investors-container .investors-logos {
+section.investors .investors-container .investors-logos ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -578,6 +582,10 @@ section.investors .investors-container .investors-logos {
           justify-content: center;
   padding: 20px 0;
 }
-section.investors .investors-container .investors-logos img {
+section.investors .investors-container .investors-logos ul li {
   padding: 20px;
+}
+section.investors .investors-container .investors-logos ul img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=index.css.map */

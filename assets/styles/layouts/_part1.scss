@@ -23,6 +23,7 @@ section.part1 {
       }
       .part1-img-container img {
         width: 80%;
+        height: auto;
         @media screen and (max-width: 770px) {
           width: 60%;
         }
