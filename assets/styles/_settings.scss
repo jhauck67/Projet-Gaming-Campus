@@ -1,11 +1,12 @@
 // Import des Fonts
 @font-face {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  font-display: swap;
 }
 
 // Variables
-$font: "Montserrat";
+$font: "Montserrat", sans-serif;
 $white: #ffffff;
 $black: #000000;
 $color: #5f04aa;
@@ -50,7 +51,7 @@ button {
   padding: 10px 20px;
   color: $white;
   border: 1px solid $white;
-  transition: 0.4s ease;
+  transition: 0.4s;
   cursor: pointer;
   &:hover {
     background: $white-button;
