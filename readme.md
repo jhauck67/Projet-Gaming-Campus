@@ -116,5 +116,5 @@ Jhauck67 (Développeuse web)
 
 # Liens utiles :
 
-Portfolio de Jennifer  
+[Portfolio de Jennifer](https://jhauck67.github.io/jenniferhauck/index.html)  
 [Voir le site en ligne](https://jhauck67.github.io/Projet-Gaming-Campus/)
