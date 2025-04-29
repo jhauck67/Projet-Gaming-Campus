@@ -19,16 +19,14 @@ body {
 
 h1 {
   text-transform: uppercase;
-  font-weight: 800;
 }
 
 li {
   list-style: none;
 }
 
-button {
+.button {
   text-transform: uppercase;
-  font-weight: 800;
   font-weight: 600;
   letter-spacing: 1px;
   background: transparent;
@@ -39,14 +37,13 @@ button {
   transition: 0.4s;
   cursor: pointer;
 }
-button:hover {
+.button:hover {
   background: rgba(245, 245, 245, 0.7490196078);
   color: #000000;
 }
 
 a {
   text-transform: uppercase;
-  font-weight: 800;
   color: #5f04aa;
   text-decoration: none;
 }
@@ -74,7 +71,6 @@ nav ul {
 }
 nav ul li {
   text-transform: uppercase;
-  font-weight: 800;
   font-size: clamp(0.55rem, 0.55rem + (1vw - 0.45rem) * 0.5, 0.7rem);
   min-height: 0vw;
   padding: 20px 10px;
@@ -148,31 +144,66 @@ header .header-container h1 {
   color: #ffffff;
   font-weight: 700;
 }
-header .header-container button {
+header .header-container .button {
+  width: clamp(205px, 12.8125rem + (1vw - 3.2px) * 11.1607, 330px);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: clamp(0.5rem, 0.5rem + (1vw - 0.2rem) * 0.7143, 1rem);
   min-height: 0vw;
 }
-header .header-container button:hover i {
+header .header-container .button:hover a {
   color: #000000;
 }
-header .header-container button i {
+header .header-container .button:hover .icon {
+  fill: #000000;
+}
+header .header-container .button a {
   color: #ffffff;
-  font-size: clamp(0.4rem, 0.4rem + (1vw - 0.2rem) * 0.4286, 0.7rem);
-  -webkit-transform: translateX(2px);
-          transform: translateX(2px);
+  font-size: clamp(0.5rem, 0.5rem + (1vw - 0.2rem) * 0.7143, 1rem);
+}
+header .header-container .button .icon {
+  fill: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: clamp(8px, 0.5rem + (1vw - 3.2px) * 0.7143, 16px);
+  width: clamp(4px, 0.25rem + (1vw - 3.2px) * 0.3571, 8px);
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
 }
 
 .header-footer .header-footer-container {
   width: 85%;
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .header-footer .header-footer-container p {
   font-size: clamp(0.6rem, 0.6rem + (1vw - 0.2rem) * 0.7143, 1.1rem);
-  min-height: 0vw;
   font-weight: 700;
-  padding-top: clamp(20px, 1.25rem + (1vw - 3.2px) * 1.7857, 40px);
-  padding-bottom: clamp(20px, 1.25rem + (1vw - 3.2px) * 1.7857, 40px);
 }
 
 section.part1 {
@@ -223,7 +254,6 @@ section.part1 .part1-container .part1-card .part1-img-container img {
 section.part1 .part1-container .part1-card h2 {
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: 800;
   font-size: clamp(0.9rem, 0.9rem + (1vw - 0.5625rem) * 1.4815, 1.4rem);
   min-height: 0vw;
   padding: 20px 0 10px;
@@ -263,7 +293,7 @@ section.news .news-container {
   max-width: 1200px;
   width: 85%;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 20px 0 60px;
 }
 section.news .news-container .news-header {
   display: grid;
@@ -287,9 +317,8 @@ section.news .news-container .news-header {
   }
 }
 section.news .news-container .news-header .news-header-left h2 {
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
-  font-weight: 800;
   font-weight: 500;
   font-size: clamp(1.2rem, 1.2rem + (1vw - 0.2rem) * 1.0667, 1.5rem);
   min-height: 0vw;
@@ -321,30 +350,67 @@ section.news .news-container .news-header .news-header-left p {
     width: 100%;
   }
 }
-section.news .news-container .news-header .news-header-right button {
+section.news .news-container .news-header .news-header-right .button {
   margin: 20px 0;
   color: #000000;
   border-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 770px) {
+  section.news .news-container .news-header .news-header-right .button {
+    width: 50%;
+    max-width: 200px;
+    margin: 20px auto;
+  }
+}
+section.news .news-container .news-header .news-header-right .button a {
+  color: #000000;
   font-weight: 700;
   font-size: clamp(0.8rem, 0.8rem + (1vw - 0.48125rem) * 0.2388, 0.9rem);
   min-height: 0vw;
 }
 @media screen and (max-width: 770px) {
-  section.news .news-container .news-header .news-header-right button {
+  section.news .news-container .news-header .news-header-right .button a {
     font-size: clamp(0.7rem, 0.7rem + (1vw - 0.2rem) * 1.0667, 1rem);
   }
 }
-section.news .news-container .news-header .news-header-right button i {
-  -webkit-transform: translateX(3px);
-          transform: translateX(3px);
-  font-size: 0.7rem;
+section.news .news-container .news-header .news-header-right .button .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  height: clamp(12.8px, 0.8rem + (1vw - 7.7px) * 0.2388, 14.4px);
+  width: clamp(6.4px, 0.4rem + (1vw - 7.7px) * 0.1194, 7.2px);
 }
-section.news .news-container .news-header .news-header-right button:hover {
-  color: #ffffff;
+@media screen and (max-width: 770px) {
+  section.news .news-container .news-header .news-header-right .button .icon {
+    height: clamp(11.2px, 0.7rem + (1vw - 3.2px) * 1.0667, 16px);
+    width: clamp(5.6px, 0.35rem + (1vw - 3.2px) * 0.5333, 8px);
+  }
+}
+section.news .news-container .news-header .news-header-right .button:hover {
   background: #000000;
 }
-section.news .news-container .news-header .news-header-right button:hover i {
+section.news .news-container .news-header .news-header-right .button:hover a {
   color: #ffffff;
+}
+section.news .news-container .news-header .news-header-right .button:hover .icon {
+  fill: #ffffff;
 }
 section.news .news-container .news-main {
   display: grid;
@@ -433,7 +499,6 @@ footer .links .links-container {
 }
 footer .links .links-container h4 {
   text-transform: uppercase;
-  font-weight: 800;
   font-size: clamp(0.8rem, 0.8rem + (1vw - 0.48125rem) * 0.7164, 1.1rem);
   min-height: 0vw;
   font-weight: 700;
@@ -489,21 +554,46 @@ footer .links .links-container .follow .networks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: clamp(0.8rem, 0.8rem + (1vw - 0.48125rem) * 0.7164, 1.1rem);
-  min-height: 0vw;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
 }
-footer .links .links-container .follow .networks i {
-  padding-right: 20px;
+footer .links .links-container .follow .networks ul {
+  height: 20px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
-footer .links .links-container .follow .networks i:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  color: #5f04aa;
+footer .links .links-container .follow .networks ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
 }
-footer .links .press-container {
+footer .links .links-container .follow .networks ul li .icon {
+  height: 20px;
+  width: 20px;
+  padding: 0;
+}
+footer .links .links-container .follow .networks ul li .icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  fill: #5f04aa;
+}
+footer .press-container {
   display: grid;
   grid-template-columns: 30% 70%;
   -webkit-box-align: center;
@@ -512,7 +602,7 @@ footer .links .press-container {
   padding: 30px 0;
   position: relative;
 }
-footer .links .press-container::before {
+footer .press-container::before {
   content: "";
   position: absolute;
   width: 75%;
@@ -523,21 +613,20 @@ footer .links .press-container::before {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-footer .links .press-container .press-container-left h4 {
+footer .press-container .press-container-left h4 {
   text-align: left;
   text-transform: uppercase;
-  font-weight: 800;
   font-size: clamp(0.7rem, 0.7rem + (1vw - 0.48125rem) * 0.7164, 1rem);
   min-height: 0vw;
 }
-footer .links .press-container .press-container-left p {
+footer .press-container .press-container-left p {
   text-align: left;
   font-size: clamp(0.7rem, 0.7rem + (1vw - 0.48125rem) * 0.7164, 1rem);
   min-height: 0vw;
   font-weight: 600;
   padding: 10px 0 0;
 }
-footer .links .press-container .press-container-right {
+footer .press-container .press-container-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,7 +652,6 @@ section.investors .investors-container {
 }
 section.investors .investors-container h2 {
   text-transform: uppercase;
-  font-weight: 800;
   color: #ffffff;
   font-size: 0.9rem;
   font-weight: 400;
