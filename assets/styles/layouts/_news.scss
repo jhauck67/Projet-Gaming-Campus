@@ -4,7 +4,7 @@ section.news {
     max-width: 1200px;
     width: 85%;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 20px 0 60px;
     .news-header {
       display: grid;
       grid-template-columns: 60% 40%;
@@ -21,7 +21,7 @@ section.news {
           width: 100%;
         }
         h2 {
-          text-align: center;
+          text-align: left;
           @include title;
           font-weight: 500;
           font-size: clamp(
@@ -69,33 +69,64 @@ section.news {
           display: block;
           width: 100%;
         }
-        button {
+        .button {
           margin: 20px 0;
           color: $black;
           border-color: $black;
-          font-weight: 700;
-          font-size: clamp(
-            0.8rem,
-            calc(0.8rem + ((1vw - 0.48125rem) * 0.2388)),
-            0.9rem
-          );
+          display: flex;
+          align-items: center;
+          justify-content: center;
           @media screen and (max-width: 770px) {
-            font-size: clamp(
-              0.7rem,
-              calc(0.7rem + ((1vw - 0.2rem) * 1.0667)),
-              1rem
-            );
+            width: 50%;
+            max-width: 200px;
+            margin: 20px auto;
           }
-          min-height: 0vw;
-          i {
-            transform: translateX(3px);
-            font-size: 0.7rem;
+          a {
+            color: $black;
+            font-weight: 700;
+            font-size: clamp(
+              0.8rem,
+              calc(0.8rem + ((1vw - 0.48125rem) * 0.2388)),
+              0.9rem
+            );
+            min-height: 0vw;
+            @media screen and (max-width: 770px) {
+              font-size: clamp(
+                0.7rem,
+                calc(0.7rem + ((1vw - 0.2rem) * 1.0667)),
+                1rem
+              );
+            }
+          }
+          .icon {
+            @include centerChild;
+            transform: translateX(5px);
+            height: clamp(
+              12.8px,
+              calc(0.8rem + ((1vw - 7.7px) * 0.2388)),
+              14.4px
+            );
+            width: clamp(6.4px, calc(0.4rem + ((1vw - 7.7px) * 0.1194)), 7.2px);
+            @media screen and (max-width: 770px) {
+              height: clamp(
+                11.2px,
+                calc(0.7rem + ((1vw - 3.2px) * 1.0667)),
+                16px
+              );
+              width: clamp(
+                5.6px,
+                calc(0.35rem + ((1vw - 3.2px) * 0.5333)),
+                8px
+              );
+            }
           }
           &:hover {
-            color: $white;
-            background: $black;
-            i {
+            a {
               color: $white;
+            }
+            background: $black;
+            .icon {
+              fill: $white;
             }
           }
         }
