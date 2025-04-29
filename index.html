@@ -75,13 +75,13 @@
     <!-- *** NAVIGATION *** -->
     <nav>
       <ul>
-        <li>Accueil</li>
-        <li>Business School</li>
-        <li>Ecole esport</li>
-        <li>Cours de jeux vidéo</li>
-        <li>Le campus</li>
-        <li>Newsroom</li>
-        <li>Parents</li>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Business School</a></li>
+        <li><a href="#">Ecole esport</a></li>
+        <li><a href="#">Cours de jeux vidéo</a></li>
+        <li><a href="#">Le campus</a></li>
+        <li><a href="#">Newsroom</a></li>
+        <li><a href="#">Parents</a></li>
         <li><div class="language">FR | EN</div></li>
       </ul>
     </nav>
@@ -136,7 +136,7 @@
             Formez-vous dans la première école de management dédiée aux enjeux
             et métiers du jeu vidéo.
           </p>
-          <button>En savoir plus</button>
+          <a href="#" class="button">En savoir plus</a>
         </div>
         <div class="part1-card">
           <div class="part1-img-container">
@@ -152,7 +152,7 @@
             Entrainez-vous dans des conditions optimales pour devenir esportif
             professionnel.
           </p>
-          <button>En savoir plus</button>
+          <a class="button">En savoir plus</a>
         </div>
         <div class="part1-card">
           <div class="part1-img-container">
@@ -168,7 +168,7 @@
             Jouez avec les meilleurs gamers pour vous améliorer dans vos jeux
             vidéo préférés.
           </p>
-          <button>En savoir plus</button>
+          <a class="button">En savoir plus</a>
         </div>
       </div>
     </section>
@@ -204,6 +204,7 @@
               alt="Photo de la réunion d'information du 19 décembre"
               width="255px"
               height="214px"
+              loading="lazy"
             />
             <h3>Réunion d'information 19 décembre</h3>
             <p>
@@ -212,9 +213,17 @@
               "Active Learning by Gaming Campus" / Découverte des locaux /
               Rencontre avec l'équipe pédagogique / Questions réponses.
             </p>
-            <a href="#"
-              >Sur inscription <i class="fa-solid fa-chevron-right"></i
-            ></a>
+            <div class="button">
+              <a href="#">Lire la suite</a>
+              <div class="icon chevron" width="8px" height="16px">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path
+                    fill="inherit"
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
           <div class="news-main-card">
             <img
@@ -222,6 +231,7 @@
               alt="Affiche de la Paris Games Week 2018"
               width="255px"
               height="214px"
+              loading="lazy"
             />
 
             <h3>Paris Games Week 2018 et réunions d'information</h3>
@@ -230,9 +240,17 @@
               pédagogique du Gaming Campus : Campus Lyon et stand Gaming Campus
               à la PGW18.
             </p>
-            <a href="#"
-              >Lire la suite <i class="fa-solid fa-chevron-right"></i
-            ></a>
+            <div class="button">
+              <a href="#">Lire la suite</a>
+              <div class="icon chevron" width="8px" height="16px">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path
+                    fill="inherit"
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
           <div class="news-main-card">
             <img
@@ -240,6 +258,7 @@
               alt="Photo de l'inauguration du Gaming Campus de Lyon"
               width="255px"
               height="214px"
+              loading="lazy"
             />
 
             <h3>Inauguration Gaming Campus Lyon</h3>
@@ -248,9 +267,17 @@
               grandes annonces de la rentrée, les photos de la soirée et les
               premières dates de réunions d'information.
             </p>
-            <a href="#"
-              >Lire la suite <i class="fa-solid fa-chevron-right"></i
-            ></a>
+            <div class="button">
+              <a href="#">Lire la suite</a>
+              <div class="icon chevron" width="8px" height="16px">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path
+                    fill="inherit"
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -265,6 +292,7 @@
               alt="Logo de Gaming Campus"
               width="150px"
               height="198px"
+              loading="lazy"
             />
           </div>
           <div class="link-container-column2">
@@ -378,48 +406,56 @@
               alt="Logo du journal Le Figaro"
               width="86px"
               height="20px"
+              loading="lazy"
             />
             <img
               src="./assets/img/challenges.webp"
               alt="Logo du journal Challenges"
               width="79px"
               height="20px"
+              loading="lazy"
             />
             <img
               src="./assets/img/leparisien.webp"
               alt="Logo du journal Le Parisien"
               width="64px"
               height="20px"
+              loading="lazy"
             />
             <img
               src="./assets/img/lemonde.webp"
               alt="Logo le monde"
               width="64px"
               height="18px"
+              loading="lazy"
             />
             <img
               src="./assets/img/progres.webp"
               alt="Logo du journal Le Progres"
               width="97px"
               height="20px"
+              loading="lazy"
             />
             <img
               src="./assets/img/echos.webp"
               alt="Logo du journal Les Echos"
               width="64px"
               height="20px"
+              loading="lazy"
             />
             <img
               src="./assets/img/bfm.webp"
               alt="Logo du journal Bfmtv"
               width="48px"
               height="20px"
+              loading="lazy"
             />
             <img
               src="./assets/img/lepoint.webp"
               alt="Logo du journal L'Equipe"
               width="69px"
               height="20px"
+              loading="lazy"
             />
           </div>
         </div>
@@ -437,6 +473,7 @@
                 alt="Logo de Apollo"
                 width="96px"
                 height="23px"
+                loading="lazy"
               />
             </li>
             <li>
@@ -445,6 +482,7 @@
                 alt="Logo de Chiliz"
                 width="78px"
                 height="26px"
+                loading="lazy"
               />
             </li>
             <li>
@@ -453,6 +491,7 @@
                 alt="Logo de Omen"
                 width="80px"
                 height="29px"
+                loading="lazy"
               />
             </li>
             <li>
@@ -461,6 +500,7 @@
                 alt="Logo de Joa"
                 width="82px"
                 height="25px"
+                loading="lazy"
               />
             </li>
             <li>
@@ -469,6 +509,7 @@
                 alt="Logo de Maxonomic"
                 width="101px"
                 height="23px"
+                loading="lazy"
               />
             </li>
             <li>
@@ -477,6 +518,7 @@
                 alt="Logo de Crédit Mutuel"
                 width="152px"
                 height="14px"
+                loading="lazy"
               />
             </li>
             <li>
@@ -485,6 +527,7 @@
                 alt="Logo de Talent Web"
                 width="52px"
                 height="26px"
+                loading="lazy"
               />
             </li>
             <li>
@@ -493,6 +536,7 @@
                 alt="Logo de Ubisoft"
                 width="40px"
                 height="37px"
+                loading="lazy"
               />
             </li>
             <li>
@@ -501,6 +545,7 @@
                 alt="Logo de Vitality"
                 width="34px"
                 height="44px"
+                loading="lazy"
               />
             </li>
             <li>
@@ -509,6 +554,7 @@
                 alt="Logo de ZOL"
                 width="50px"
                 height="26px"
+                loading="lazy"
               />
             </li>
           </ul>

@@ -10,23 +10,31 @@ nav {
     align-items: center;
     justify-content: space-between;
     li {
-      @include title;
-      font-size: clamp(
-        0.55rem,
-        calc(0.55rem + ((1vw - 0.45rem) * 0.5)),
-        0.7rem
-      );
-      min-height: 0vw;
       padding: 20px 10px;
-      cursor: pointer;
+      a,
+      .language {
+        @include title;
+        font-size: clamp(
+          0.55rem,
+          calc(0.55rem + ((1vw - 0.45rem) * 0.5)),
+          0.7rem
+        );
+        font-weight: 800;
+        color: $black;
+        min-height: 0vw;
+        cursor: pointer;
+      }
       .language {
         background: $grey1;
         padding: 6px 12px;
         border-radius: 50px;
-        transition: 0.3s ease;
+        transition: 0.2s;
+        cursor: pointer;
       }
       &:first-child {
-        color: $color;
+        a {
+          color: $color;
+        }
         position: relative;
         &::before {
           content: "";
@@ -39,7 +47,9 @@ nav {
         }
       }
       &:not(:last-child):hover {
-        color: $color;
+        a {
+          color: $color;
+        }
         position: relative;
         &::before {
           content: "";
