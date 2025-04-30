@@ -566,8 +566,8 @@ header.hero .hero-container h1 {
   padding-bottom: 40px;
 }
 .links .links-container .networks ul {
-  height: 20px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,8 +591,8 @@ header.hero .hero-container h1 {
   margin-right: 15px;
 }
 .links .links-container .networks ul li .icon {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   padding: 0;
 }
 .links .links-container .networks ul li .icon:hover {
@@ -656,7 +656,7 @@ footer.investors {
 }
 footer.investors .investors-container {
   max-width: 1200px;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   padding: 30px;
 }
@@ -668,12 +668,10 @@ footer.investors .investors-container h2 {
   font-weight: 400;
   padding-bottom: 20px;
 }
-footer.investors .investors-container .investors-logos ul {
+footer.investors .investors-container .investors-logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -681,10 +679,39 @@ footer.investors .investors-container .investors-logos ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-footer.investors .investors-container .investors-logos ul li {
-  padding: 15px;
+@media screen and (max-width: 770px) {
+  footer.investors .investors-container .investors-logos {
+    display: block;
+  }
 }
-footer.investors .investors-container .investors-logos ul img {
+footer.investors .investors-container .investors-logos .investors-logos-left ul,
+footer.investors .investors-container .investors-logos .investors-logos-right ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer.investors .investors-container .investors-logos .investors-logos-left ul li,
+footer.investors .investors-container .investors-logos .investors-logos-right ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10px;
+}
+footer.investors .investors-container .investors-logos .investors-logos-left ul img,
+footer.investors .investors-container .investors-logos .investors-logos-right ul img {
   width: 100%;
   height: auto;
 }/*# sourceMappingURL=index.css.map */
