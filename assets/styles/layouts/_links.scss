@@ -53,8 +53,8 @@
       align-items: start;
       padding-bottom: 40px;
       ul {
-        height: 20px;
-        width: 30px;
+        height: 25px;
+        width: 25px;
         display: flex;
         align-items: center;
         justify-content: start;
@@ -62,8 +62,8 @@
           @include centerChild;
           margin-right: 15px;
           .icon {
-            height: 20px;
-            width: 20px;
+            height: 25px;
+            width: 25px;
             padding: 0;
             &:hover {
               transform: scale(1.2);

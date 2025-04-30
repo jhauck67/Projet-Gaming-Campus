@@ -2,7 +2,7 @@ footer.investors {
   background: $black;
   .investors-container {
     max-width: 1200px;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     padding: 30px;
     h2 {
@@ -12,17 +12,27 @@ footer.investors {
       font-weight: 400;
       padding-bottom: 20px;
     }
-    .investors-logos ul {
+    .investors-logos {
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      li {
-        padding: 15px;
+      @media screen and (max-width: 770px) {
+        display: block;
       }
-      img {
+      .investors-logos-left ul,
+      .investors-logos-right ul {
         width: 100%;
-        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+          @include centerChild;
+          padding: 0 10px;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
