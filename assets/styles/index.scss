@@ -1,7 +1,10 @@
-@import "./settings";
-@import "./layouts/navbar";
-@import "./layouts/header";
-@import "./layouts/part1";
-@import "./layouts/news";
-@import "./layouts/footer";
-@import "./layouts/_investors";
+//! IL FAUDRA MODIFIER CES LIENS
+@import "./settings-m";
+@import "./components/nav-m";
+@import "./layouts/header-m";
+@import "./components/button";
+@import "./layouts/headband";
+@import "./layouts/cursus";
+@import "./layouts/news-m";
+@import "./layouts/links";
+@import "./layouts/footer-m";

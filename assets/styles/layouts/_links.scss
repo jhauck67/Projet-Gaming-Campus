@@ -1,0 +1,117 @@
+.links {
+  background: $white;
+  @media screen and (max-width: 905px) {
+    display: none;
+  }
+  .links-container {
+    max-width: 1200px;
+    width: 85%;
+    margin: 80px auto 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+    .link-container-column2,
+    .link-container-column3,
+    .link-container-column4 {
+      h2 {
+        text-align: left;
+        @include title;
+        @include h2-police-desktop;
+        letter-spacing: 0;
+        font-weight: 700;
+        padding-bottom: 15px;
+      }
+      a {
+        display: block;
+        text-align: left;
+        @include p-police-desktop;
+        color: $color;
+        font-weight: 700;
+        padding: 10px 0;
+        transition: 0.3s;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+      p {
+        text-align: left;
+        @include p-police-desktop;
+        font-weight: 700;
+        padding: 10px 40px 10px 0;
+        line-height: 25px;
+      }
+    }
+    .link-container-column1 {
+      height: 100%;
+      @include centerChild;
+    }
+    .contact {
+      padding-bottom: 40px;
+    }
+    .networks {
+      display: flex;
+      align-items: start;
+      padding-bottom: 40px;
+      ul {
+        height: 20px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        li {
+          @include centerChild;
+          margin-right: 15px;
+          .icon {
+            height: 20px;
+            width: 20px;
+            padding: 0;
+            &:hover {
+              transform: scale(1.2);
+              fill: $color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .press-container {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    padding: 30px 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 75%;
+      height: 1px;
+      background: $grey1;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .press-container-left {
+      h3 {
+        text-align: left;
+        @include title;
+        @include p-police-desktop;
+      }
+      p {
+        text-align: left;
+        @include p-police-desktop;
+        font-weight: 600;
+        padding: 10px 0 0;
+      }
+    }
+    .press-container-right {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}

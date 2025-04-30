@@ -1,190 +1,133 @@
-section.news {
+.news {
+  padding: 60px 0;
   background: $grey2;
   .news-container {
     max-width: 1200px;
     width: 85%;
     margin: 0 auto;
-    padding: 20px 0 60px;
-    .news-header {
+    .news-title {
+      padding: 20px 0;
       display: grid;
       grid-template-columns: 60% 40%;
       align-items: center;
-      justify-items: start;
-      @media screen and (max-width: 770px) {
+      justify-items: left;
+      @media screen and (max-width: 905px) {
         display: block;
-        width: 100%;
+        justify-items: center;
       }
-      padding: 30px 0;
-      .news-header-left {
-        @media screen and (max-width: 770px) {
-          display: block;
-          width: 100%;
-        }
+      .news-title-left {
         h2 {
-          text-align: left;
+          display: flex;
+          justify-content: start;
           @include title;
           font-weight: 500;
-          font-size: clamp(
-            1.2rem,
-            calc(1.2rem + ((1vw - 0.2rem) * 1.0667)),
-            1.5rem
-          );
-
-          @media screen and (max-width: 770px) {
-            width: 100%;
-            font-size: clamp(
-              1.2rem,
-              calc(1.2rem + ((1vw - 0.2rem) * 1.0667)),
-              1.5rem
-            );
-            text-align: center;
+          font-size: 1.8rem;
+          @media screen and (max-width: 905px) {
+            justify-content: center;
+            @include h2-news-police-mobile;
           }
-          min-height: 0vw;
-          padding: 10px 0;
         }
         p {
-          font-size: clamp(
-            0.6rem,
-            calc(0.6rem + ((1vw - 0.48125rem) * 0.7164)),
-            0.9rem
-          );
-          @media screen and (max-width: 770px) {
-            width: 100%;
-            font-size: clamp(
-              0.7rem,
-              calc(0.7rem + ((1vw - 0.2rem) * 1.0667)),
-              1rem
-            );
-
-            text-align: center;
+          display: flex;
+          justify-content: start;
+          font-weight: 600;
+          @include p-police-desktop;
+          @media screen and (max-width: 905px) {
+            @include p-police-mobile;
           }
 
-          min-height: 0vw;
-          font-weight: 700;
-          text-align: left;
+          padding: 15px 0;
         }
       }
-      .news-header-right {
-        @media screen and (max-width: 770px) {
-          display: block;
-          width: 100%;
-        }
+      .news-title-right {
         .button {
-          margin: 20px 0;
-          color: $black;
           border-color: $black;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          @media screen and (max-width: 770px) {
-            width: 50%;
-            max-width: 200px;
-            margin: 20px auto;
+          &:hover {
+            background: $black-button;
+            a {
+              color: $white;
+              svg {
+                fill: $white;
+              }
+            }
           }
           a {
             color: $black;
-            font-weight: 700;
-            font-size: clamp(
-              0.8rem,
-              calc(0.8rem + ((1vw - 0.48125rem) * 0.2388)),
-              0.9rem
-            );
-            min-height: 0vw;
-            @media screen and (max-width: 770px) {
-              font-size: clamp(
-                0.7rem,
-                calc(0.7rem + ((1vw - 0.2rem) * 1.0667)),
-                1rem
-              );
-            }
-          }
-          .icon {
-            @include centerChild;
-            transform: translateX(5px);
-            height: clamp(
-              12.8px,
-              calc(0.8rem + ((1vw - 7.7px) * 0.2388)),
-              14.4px
-            );
-            width: clamp(6.4px, calc(0.4rem + ((1vw - 7.7px) * 0.1194)), 7.2px);
-            @media screen and (max-width: 770px) {
-              height: clamp(
-                11.2px,
-                calc(0.7rem + ((1vw - 3.2px) * 1.0667)),
-                16px
-              );
-              width: clamp(
-                5.6px,
-                calc(0.35rem + ((1vw - 3.2px) * 0.5333)),
-                8px
-              );
-            }
-          }
-          &:hover {
-            a {
-              color: $white;
-            }
-            background: $black;
-            .icon {
-              fill: $white;
+            svg {
+              fill: $black;
             }
           }
         }
       }
     }
     .news-main {
+      padding: 0 10px;
       display: grid;
-      grid-template-columns: 30% 30% 30%;
+      grid-template-columns: 33% 33% 33%;
       align-items: start;
       justify-content: space-between;
-      gap: auto;
-      position: relative;
-      @media screen and (max-width: 770px) {
+      @media screen and (max-width: 905px) {
         display: block;
       }
-      .news-main-card {
-        justify-items: start;
-        img {
-          width: 95%;
-          height: auto;
-          margin: 10px;
-          box-shadow: 2px 2px 12px 1px #7b7a7a;
-        }
-        h3 {
-          text-align: left;
-          font-size: 1.1rem;
-          padding: 0 10px 10px;
-        }
-        p {
-          text-align: left;
-          font-size: 1rem;
-          font-weight: 600;
-          padding: 0 10px 30px;
-          @media screen and (max-width: 770px) {
-            font-size: clamp(
-              0.7rem,
-              calc(0.7rem + ((1vw - 0.2rem) * 1.0667)),
-              1rem
-            );
+
+      position: relative;
+      .news-card {
+        width: 100%;
+        padding: 30px;
+        .news-img-container {
+          width: 100%;
+          @media screen and (max-width: 905px) {
+            width: 50%;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            box-shadow: 2px 2px 4px 1px #0000004a;
           }
         }
-        a {
-          padding: 0 10px;
+        h3 {
+          display: flex;
+          text-align: left;
+          width: 100%;
+          padding: 10px 0;
+          font-weight: 700;
+          @include h3-police-desktop;
+          @media screen and (max-width: 905px) {
+            @include h3-police-mobile;
+          }
+        }
+        p {
+          display: flex;
+          text-align: left;
+          width: 100%;
+          font-weight: 600;
+          line-height: 20px;
+          padding-bottom: 10px;
+          @include p-police-desktop;
+          @media screen and (max-width: 905px) {
+            @include p-police-mobile;
+          }
+        }
+        .button {
+          display: flex;
+          text-align: left;
+          padding: 0;
           position: absolute;
-          display: block;
           bottom: 0;
-          transition: 0.2s;
+          transition: 0.3s;
           &:hover {
             transform: scale(1.05);
           }
-          @media screen and (max-width: 770px) {
+          @media screen and (max-width: 905px) {
             position: relative;
-            padding-bottom: 30px;
-            font-size: clamp(
-              0.7rem,
-              calc(0.7rem + ((1vw - 0.2rem) * 1.0667)),
-              1rem
-            );
+          }
+          border: none;
+          a {
+            color: $color;
+            svg {
+              fill: $color;
+            }
           }
         }
       }

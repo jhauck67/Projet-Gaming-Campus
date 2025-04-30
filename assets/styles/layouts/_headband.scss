@@ -1,0 +1,15 @@
+.headband {
+  .headband-container {
+    max-width: 1200px;
+    width: 85%;
+    margin: 50px auto;
+    @include centerChild;
+    h2 {
+      @include h2-police-desktop;
+      font-weight: 700;
+      @media screen and (max-width: 770px) {
+        @include h2-police-mobile;
+      }
+    }
+  }
+}
