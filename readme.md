@@ -93,11 +93,11 @@ Le site est optimisé pour le référencement naturel (SEO) avec un score de 100
 
 - [ ] Optimisation des éléments visuels :
 
-  - [ ] Retrait des boutons : Retravailler les boutons pour améliorer leur interactivité et leur accessibilité. Ajouter des animations CSS ou JavaScript pour une meilleure expérience utilisateur.
-  - [ ] Ajout d'ancres : Mettre en place des ancres pour une meilleure navigation entre les sections du site.
+  - [x] Retrait des boutons : Retravailler les boutons pour améliorer leur interactivité et leur accessibilité. Ajouter des animations CSS ou JavaScript pour une meilleure expérience utilisateur.
+  - [x] Ajout d'ancres : Mettre en place des ancres pour une meilleure navigation entre les sections du site.
   - [x] Optimiser les .png en .webp
   - [x] Ajouter des attributs **width** et **height** aux balises `<img>`
-  - [ ] Remplacer les balises `<i>` de Font Awesome par des `<img>` `.sgv`
+  - [x] Remplacer les balises `<i>` de Font Awesome par des `<img>` `.sgv`
   - [x] Ajouter `font-display` pour améliorer la performance
 
 - [x] Modifications SEO friendly :
