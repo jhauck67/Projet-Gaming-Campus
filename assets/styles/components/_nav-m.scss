@@ -1,0 +1,63 @@
+nav {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+  height: 60px;
+  //* STYLE NOT(:HOVER)
+  &:hover li:not(:hover) {
+    a {
+      color: $black;
+    }
+    ::before {
+      background: transparent;
+    }
+  }
+  //* MEDIA QUERIES
+  @media screen and (max-width: 915px) {
+    display: none;
+  }
+  ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      height: 100%;
+      @include centerChild;
+      position: relative;
+      //* STYLE FOCUS OU HOVER
+      &:first-child,
+      &:not(:last-child):hover {
+        a {
+          color: $color;
+        }
+        ::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 5px;
+          background: $color;
+          top: 0;
+          left: 0;
+        }
+      }
+      a {
+        @include title;
+        @include navbar-police;
+      }
+      .language {
+        background: $grey1;
+        padding: 6px 12px;
+        border-radius: 50px;
+        @include navbar-police;
+        transition: 0.2s;
+        cursor: pointer;
+        transition: 0.3s;
+        //* STYLE HOVER
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

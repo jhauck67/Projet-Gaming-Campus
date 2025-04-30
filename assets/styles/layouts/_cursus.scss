@@ -1,0 +1,42 @@
+.cursus {
+  background: $black;
+  .cursus-container {
+    max-width: 1200px;
+    width: 85%;
+    @media screen and (max-width: 905px) {
+      max-width: 475px;
+    }
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 905px) {
+      display: block;
+    }
+    .cursus-card {
+      padding-bottom: 30px;
+      .cursus-img-container {
+        @include centerChild;
+      }
+      h3 {
+        @include title;
+        @include h3-police-desktop;
+        @media screen and (max-width: 905px) {
+          @include h3-police-mobile;
+        }
+        letter-spacing: 1px;
+        margin-top: 20px;
+        color: $white;
+      }
+      p {
+        padding: 20px;
+        color: $white;
+        @include p-police-desktop;
+        @media screen and (max-width: 905px) {
+          @include p-police-mobile;
+        }
+      }
+    }
+  }
+}
