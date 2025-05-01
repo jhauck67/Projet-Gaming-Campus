@@ -1,5 +1,9 @@
 header.hero {
   background: url(../img/background-video-game-player.webp) center/cover fixed;
+  @media screen and (max-width: 700px) {
+    background: url(../../img/background-video-game-player-mobile.webp)
+      center/cover fixed;
+  }
   padding: 60px 0;
   @include centerChild;
   .hero-container {

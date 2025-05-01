@@ -120,6 +120,11 @@ header.hero {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 700px) {
+  header.hero {
+    background: url(../../img/background-video-game-player-mobile.webp) center/cover fixed;
+  }
+}
 header.hero .hero-container {
   width: 70%;
   padding: 20px 0;
