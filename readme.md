@@ -4,7 +4,7 @@
 ![Responsive Design](https://img.shields.io/badge/Responsive_Design-Mobile_Friendly-2ea44f) ![Optimisation des images](https://img.shields.io/badge/Optimisation%20des%20images-Squoosh-blue) ![SEO Friendly](https://img.shields.io/badge/SEO-Friendly-2ea44f)  
 \
 ![Lighthouse](https://img.shields.io/badge/Lighthouse-white?style=for-the-badge&logo=lighthouse)
-![Performances](https://img.shields.io/badge/Performances-100-brightgreen) ![Accessibilité](https://img.shields.io/badge/Accessibilit%C3%A9-100-brightgreen) ![Bonnes Pratiques](https://img.shields.io/badge/Bonnes_pratiques-100-brightgreen) ![SEO](https://img.shields.io/badge/SEO-100-brightgreen)
+![Performances](https://img.shields.io/badge/Performances-95-brightgreen) ![Accessibilité](https://img.shields.io/badge/Accessibilit%C3%A9-100-brightgreen) ![Bonnes Pratiques](https://img.shields.io/badge/Bonnes_pratiques-100-brightgreen) ![SEO](https://img.shields.io/badge/SEO-100-brightgreen)
 \
 <img src="https://github.com/jhauck67/Projet-Gaming-Campus/blob/main/assets/sketch/aper%C3%A7u.png" alt="Aperçu du Projet" style="width:960px; height:auto;">
 
