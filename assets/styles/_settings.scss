@@ -35,8 +35,9 @@ $black-button: #000000c2;
   color: $black;
 }
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   background: $white;
+  overflow-x: hidden;
 }
 
 li {
