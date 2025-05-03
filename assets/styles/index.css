@@ -122,7 +122,7 @@ header.hero {
 }
 @media screen and (max-width: 700px) {
   header.hero {
-    background: url(../img/background-video-game-player-mobile.webp) center/cover fixed;
+    background: url(../img/background-video-game-player-mobile2.webp);
   }
 }
 header.hero .hero-container {
