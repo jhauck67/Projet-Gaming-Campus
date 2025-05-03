@@ -4,7 +4,7 @@
 ![Responsive Design](https://img.shields.io/badge/Responsive_Design-Mobile_Friendly-2ea44f) ![Optimisation des images](https://img.shields.io/badge/Optimisation%20des%20images-Squoosh-blue) ![SEO Friendly](https://img.shields.io/badge/SEO-Friendly-2ea44f)  
 \
 ![Lighthouse](https://img.shields.io/badge/Lighthouse-white?style=for-the-badge&logo=lighthouse)
-![Performances](https://img.shields.io/badge/Performances-100-brightgreen) ![Accessibilité](https://img.shields.io/badge/Accessibilit%C3%A9-100-brightgreen) ![Bonnes Pratiques](https://img.shields.io/badge/Bonnes_pratiques-100-brightgreen) ![SEO](https://img.shields.io/badge/SEO-100-brightgreen)
+![Performances](https://img.shields.io/badge/Performances-95-brightgreen) ![Accessibilité](https://img.shields.io/badge/Accessibilit%C3%A9-100-brightgreen) ![Bonnes Pratiques](https://img.shields.io/badge/Bonnes_pratiques-100-brightgreen) ![SEO](https://img.shields.io/badge/SEO-100-brightgreen)
 \
 <img src="https://github.com/jhauck67/Projet-Gaming-Campus/blob/main/assets/sketch/aper%C3%A7u.png" alt="Aperçu du Projet" style="width:960px; height:auto;">
 
@@ -133,19 +133,19 @@ Le projet a été audité à l'aide de Lighthouse pour évaluer ses performances
 
 ## Performances ![Performances](https://img.shields.io/badge/Performances-95-brightgreen)  
 
-**First Contentful Paint** ![First Contentful Paint](https://img.shields.io/badge/FCP-2,2s-brightgreen)  
+**First Contentful Paint** ![First Contentful Paint](https://img.shields.io/badge/FCP-2,3-brightgreen)  
 La métrique "First Contentful Paint" indique le moment où le premier texte ou la première image sont affichés.  
 \
-**Largest Contentful Paint** ![Largest Contentful Paint](https://img.shields.io/badge/LCP-2,3s-brightgreen)  
+**Largest Contentful Paint** ![Largest Contentful Paint](https://img.shields.io/badge/LCP-2,4s-brightgreen)  
 La métrique "Largest Contentful Paint" indique le moment où le texte le plus long ou l'image la plus grande sont affichés.  
 \
 **Total Blocking Time** ![Total Blocking Time](https://img.shields.io/badge/TBT-0ms-brightgreen)  
 Somme en millisecondes de toutes les périodes entre le FCP et le délai avant interactivité, lorsque la durée de la tâche a dépassé 50 ms.  
 \
-**Cumulative Layout Shift** ![Cumulative Layout Shift](https://img.shields.io/badge/CLS-0,002-brightgreen)  
+**Cumulative Layout Shift** ![Cumulative Layout Shift](https://img.shields.io/badge/CLS-0,003-brightgreen)  
 Cumulative Layout Shift mesure le mouvement des éléments visibles dans la fenêtre d'affichage.  
 \
-**Speed Index** ![Speed Index](https://img.shields.io/badge/Speed_Index-2,9s-brightgreen)  
+**Speed Index** ![Speed Index](https://img.shields.io/badge/Speed_Index-2,3s-brightgreen)  
 La métrique "Speed Index" indique la rapidité avec laquelle le contenu d'une page est disponible.  
 \
 Le site est parfaitement optimisé, avec un temps de chargement ultra rapide, une absence totale de blocage et de décalage de mise en page, garantissant une expérience utilisateur fluide et réactive.
